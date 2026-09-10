@@ -5,7 +5,9 @@ int main() {
     double fahrenheit, celsius;
     cin >> fahrenheit;
 
-    celsius = (fahrenheit - 32) * (5.0 / 9.0);
+    celsius = fahrenheit - 32;
+    celsius = celsius * 5;
+    celsius = celsius / 9;
 
     cout.precision(12);
     cout << celsius << endl;

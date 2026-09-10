@@ -2,11 +2,14 @@
 using namespace std;
 
 int main() {
-    int numero;
+    int numero, antecessor, sucessor;
     cin >> numero;
 
-    cout << numero - 1 << endl;
-    cout << numero + 1 << endl;
+    antecessor = numero - 1;
+    sucessor = numero + 1;
+
+    cout << antecessor << endl;
+    cout << sucessor << endl;
 
     return 0;
 }

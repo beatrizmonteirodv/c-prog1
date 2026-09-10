@@ -10,21 +10,30 @@ using namespace std;
 
 int main() {
     int valor;
+    int notas100, notas50, notas20, notas10, notas5, notas2, notas1;
+
     cin >> valor;
 
-    cout << valor / 100 << endl;
+    notas100 = valor / 100;
     valor = valor % 100;
-    cout << valor / 50 << endl;
+    notas50 = valor / 50;
     valor = valor % 50;
-    cout << valor / 20 << endl;
+    notas20 = valor / 20;
     valor = valor % 20;
-    cout << valor / 10 << endl;
+    notas10 = valor / 10;
     valor = valor % 10;
-    cout << valor / 5 << endl;
+    notas5 = valor / 5;
     valor = valor % 5;
-    cout << valor / 2 << endl;
-    valor = valor % 2;
-    cout << valor << endl;
+    notas2 = valor / 2;
+    notas1 = valor % 2;
+
+    cout << notas100 << endl;
+    cout << notas50 << endl;
+    cout << notas20 << endl;
+    cout << notas10 << endl;
+    cout << notas5 << endl;
+    cout << notas2 << endl;
+    cout << notas1 << endl;
 
     return 0;
 }
@@ -65,12 +74,20 @@ int main() {
 using namespace std;
 
 int main() {
-    double x1, y1, x2, y2, distancia;
-    cin >> x1 >> y1 >> x2 >> y2;
+    double x1, y1, x2, y2;
+    double diferencaX, diferencaY, soma, distancia;
 
-    distancia = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+    cin >> x1;
+    cin >> y1;
+    cin >> x2;
+    cin >> y2;
 
-    cout.setf(ios::fixed);
+    diferencaX = x2 - x1;
+    diferencaY = y2 - y1;
+    soma = diferencaX * diferencaX + diferencaY * diferencaY;
+    distancia = sqrt(soma);
+
+    cout << fixed;
     cout.precision(5);
     cout << distancia << endl;
 
@@ -90,7 +107,9 @@ int main() {
     double fahrenheit, celsius;
     cin >> fahrenheit;
 
-    celsius = (fahrenheit - 32) * (5.0 / 9.0);
+    celsius = fahrenheit - 32;
+    celsius = celsius * 5;
+    celsius = celsius / 9;
 
     cout.precision(12);
     cout << celsius << endl;
@@ -134,11 +153,14 @@ int main() {
 using namespace std;
 
 int main() {
-    int numero;
+    int numero, antecessor, sucessor;
     cin >> numero;
 
-    cout << numero - 1 << endl;
-    cout << numero + 1 << endl;
+    antecessor = numero - 1;
+    sucessor = numero + 1;
+
+    cout << antecessor << endl;
+    cout << sucessor << endl;
 
     return 0;
 }
@@ -165,3 +187,4 @@ int main() {
     return 0;
 }
 ```
+

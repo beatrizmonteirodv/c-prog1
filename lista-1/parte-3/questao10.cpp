@@ -3,12 +3,20 @@
 using namespace std;
 
 int main() {
-    double x1, y1, x2, y2, distancia;
-    cin >> x1 >> y1 >> x2 >> y2;
+    double x1, y1, x2, y2;
+    double diferencaX, diferencaY, soma, distancia;
 
-    distancia = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+    cin >> x1;
+    cin >> y1;
+    cin >> x2;
+    cin >> y2;
 
-    cout.setf(ios::fixed);
+    diferencaX = x2 - x1;
+    diferencaY = y2 - y1;
+    soma = diferencaX * diferencaX + diferencaY * diferencaY;
+    distancia = sqrt(soma);
+
+    cout << fixed;
     cout.precision(5);
     cout << distancia << endl;
 
