@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    long long numero;
+    int numero;
     int quantidade = 0, soma = 0;
     cin >> numero;
 

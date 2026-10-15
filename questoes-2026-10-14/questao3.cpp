@@ -2,13 +2,13 @@
 using namespace std;
 
 int main() {
-    long long minutos;
+    int minutos;
     cin >> minutos;
 
-    long long valor = 8;
+    int valor = 8;
     if (minutos > 60) {
-        long long minutosExtras = minutos - 60;
-        long long horasExtras = minutosExtras / 60;
+        int minutosExtras = minutos - 60;
+        int horasExtras = minutosExtras / 60;
         if (minutosExtras % 60 != 0) {
             horasExtras++;
         }

@@ -2,21 +2,21 @@
 using namespace std;
 
 int main() {
-    long long valor;
+    int valor;
     cin >> valor;
 
     // Usa as maiores notas primeiro, como o enunciado pede.
-    long long notas100 = valor / 100;
+    int notas100 = valor / 100;
     valor = valor % 100;
-    long long notas50 = valor / 50;
+    int notas50 = valor / 50;
     valor = valor % 50;
-    long long notas20 = valor / 20;
+    int notas20 = valor / 20;
     valor = valor % 20;
-    long long notas10 = valor / 10;
+    int notas10 = valor / 10;
     valor = valor % 10;
-    long long notas5 = valor / 5;
+    int notas5 = valor / 5;
     valor = valor % 5;
-    long long notas2 = valor / 2;
+    int notas2 = valor / 2;
     valor = valor % 2;
 
     if (valor != 0) {

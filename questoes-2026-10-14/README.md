@@ -2,7 +2,7 @@
 
 Resoluções das questões enviadas nas fotos de 14/10/2026. A questão 6 foi excluída conforme solicitado. Cada arquivo é um programa independente, com seu próprio `main`.
 
-Usamos entrada e saída, variáveis, operações aritméticas, `if`, `while` e `for`. Os programas não imprimem perguntas antes da leitura: a saída contém somente o resultado pedido.
+Usamos apenas `int` para os números, entrada e saída, operações aritméticas, `if`, `while` e `for`. Os programas não imprimem perguntas antes da leitura: a saída contém somente o resultado pedido.
 
 ## Como executar
 
@@ -161,7 +161,7 @@ O script compila os cinco programas com `-std=c++17 -Wall -Wextra -Werror` e com
 | 1 | 7 | 185, 186, nota única, valor 1, resto 1 e uso de notas de 2 |
 | 2 | 5 | Exemplo, nenhum par, zeros, algarismo único e pares repetidos |
 | 3 | 8 | Exemplos e limites de 1, 60, 61, 120, 121 e 180 minutos |
-| 4 | 6 | Três exemplos, zero final, zero interno e maior int de 32 bits |
-| 5 | 6 | Exemplo, um valor, valores iguais, negativos e extremos de int |
+| 4 | 6 | Três exemplos, zero final, zero interno e número de seis algarismos |
+| 5 | 6 | Exemplo, um valor, valores iguais, negativos e salto de 2000 |
 
-As fotos não definem limites máximos numéricos. Nesta implementação, as questões 1, 2 e 3 leem `long long` (até 9.223.372.036.854.775.807 no ambiente testado). A questão 4 lê `int` positivo (até 2.147.483.647), usando `long long` para a inversão. A questão 5 lê quantidade e valores como `int`, usando `long long` para a diferença. Não há validação de entradas fora das condições do enunciado ou desses limites de representação. Na questão 3 não foi criado um limite de permanência adicional; permanece apenas o limite do tipo numérico.
+As soluções usam `int`, conforme o nível de conteúdo solicitado. Os valores lidos e os resultados das contas precisam caber nesse tipo, inclusive o número invertido na questão 4 e a diferença na questão 5. No compilador testado, `int` vai de -2.147.483.648 a 2.147.483.647. As fotos não informam limites máximos; números que ultrapassem essa capacidade não são cobertos por esta versão simples.

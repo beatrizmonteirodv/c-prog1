@@ -6,12 +6,11 @@ int main() {
     cin >> quantidade;
     cin >> anterior;
 
-    long long maiorSalto = 0;
+    int maiorSalto = 0;
     for (int i = 1; i < quantidade; i++) {
         cin >> atual;
 
-        // Converte antes da subtracao para caber a diferenca entre dois ints.
-        long long salto = (long long) atual - anterior;
+        int salto = atual - anterior;
         if (salto < 0) {
             salto = -salto;
         }

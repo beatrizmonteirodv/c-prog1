@@ -33,13 +33,13 @@ $casos = @(
     @{ Q=4; Entrada="7"; Saida="SIM" },
     @{ Q=4; Entrada="10"; Saida="NAO" },
     @{ Q=4; Entrada="1001"; Saida="SIM" },
-    @{ Q=4; Entrada="2147483647"; Saida="NAO" },
+    @{ Q=4; Entrada="123456"; Saida="NAO" },
     @{ Q=5; Entrada="6`n10`n15`n8`n20`n18`n30"; Saida="Maior salto: 12" },
     @{ Q=5; Entrada="1`n42"; Saida="Maior salto: 0" },
     @{ Q=5; Entrada="3`n5`n5`n5"; Saida="Maior salto: 0" },
     @{ Q=5; Entrada="3`n-10`n-3`n-20"; Saida="Maior salto: 17" },
     @{ Q=5; Entrada="2`n10`n-10"; Saida="Maior salto: 20" },
-    @{ Q=5; Entrada="2`n-2147483648`n2147483647"; Saida="Maior salto: 4294967295" }
+    @{ Q=5; Entrada="2`n-1000`n1000"; Saida="Maior salto: 2000" }
 )
 
 $aprovados = 0
